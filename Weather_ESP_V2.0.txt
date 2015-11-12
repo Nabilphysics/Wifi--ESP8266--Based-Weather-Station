@@ -4,6 +4,8 @@
 // Weather Station
 // Department of EEE
 // Syed Razwanul Haque & Robi Kormokar
+//www.fb.com/Nabilphysics
+https://github.com/Nabilphysics/Wifi--ESP8266--Based-Weather-Station
 #include <SoftwareSerial.h>
 #include <AirQuality.h>
 #include"Arduino.h"
@@ -39,7 +41,7 @@ int uv_sensorValue,uv_index;
 float h,t;
 
 bool WifiConnection = false;
-String WifiPass = "AT+CWJAP=\"MU-778-b\",\"112233445566\"";       //Wifi SSID & Password
+String WifiPass = "AT+CWJAP=\"MU-778\",\"12234556\"";       //Wifi SSID & Password
 
 void setup() 
 {
@@ -158,7 +160,7 @@ int uv(){
 ////////////////////////////////////////Data Sending//////////////////////////////////////////////////
 void throwData(){
    
-   String field1 = "GET /update?key=OYH101OZ0JDR67UF&field1=";  //Write Format https://api.thingspeak.com/update?key=OYH101OZ0JDR67UF&field1=1&field2=2field3=2&field4=4
+   String field1 = "GET /update?key=OYH101OZ0yyR67UF&field1=";  //Write Format https://api.thingspeak.com/update?key=OYH101OZ0ttR67UF&field1=1&field2=2field3=2&field4=4
    String field2 = "&field2="; //Humidity
    String field3 = "&field3="; //Temperature
    String field4 = "&field4="; //AirQuality
@@ -172,7 +174,7 @@ void throwData(){
    wifi.print("\r\n");
    Serial.println(dataPacket); //
    delay(5000);
-   dataPacket = "GET /update?key=OYH101OZ0JDR67UF&field1=";  // Reset
+   dataPacket = "GET /update?key=OYH101OtthR67UF&field1=";  // Reset
    }
 /////////////////////////////Data Sending End /////////////////////////////////////////////////    
     
