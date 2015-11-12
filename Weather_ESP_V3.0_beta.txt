@@ -4,6 +4,12 @@
 // Weather Station
 // Department of EEE
 // Syed Razwanul Haque & Robi Kormokar
+/////////////////////////////////Sensor USED//////////////////////////////////////
+//UV Sensor : http://www.dfrobot.com/index.php?route=product/product&keyword=UV%20sensor&product_id=834#.VkSLcr9ghxN
+//Air Quality Sensor: http://www.seeedstudio.com/depot/grove-air-quality-sensor-p-1065.html?cPath=25_27
+//Temerature and Humidity: DHT11
+///////////////////////////////////////////////////////////////////////////////////
+
 #include <SoftwareSerial.h>
 #include <AirQuality.h>
 #include"Arduino.h"
